@@ -1,9 +1,12 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 import HeroSection from '../components/HeroSection'
 
 const Templates = () => {
   return (
-    <div><HeroSection/></div>
+    <Box>
+      This is template
+    </Box>
   )
 }
 

@@ -6,7 +6,7 @@ import HeroImg from '../assets/images/heroImg.png'
 
 const HeroSection = () => {
   return (
-    <Box display={'flex'} marginTop={'98px'}>
+    <Box paddingBottom={'60px'} display={'flex'} marginTop={'98px'}>
         <Box padding={'0 112px'}>
             <Text fontSize={'24px'} color={'#1F2D47'} paddingRight={'35%'}>You can link your data's from various platforms and stay
             connected at all time.</Text>
