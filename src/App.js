@@ -1,24 +1,27 @@
 import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Error from './pages/Error';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './outlet/Layout';
+// import LandingPage from './pages/LandingPage';
+import Templates from './pages/Templates';  
+import { Box } from '@chakra-ui/react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+<Box className=" h-[100%]">
+  <Routes>
+    <Route path={'/'} element={<Layout/>}>
+        {/* <Route index element={<LandingPage />}/> */}
+        <Route index element={<Templates/>}/>
+        {/* <Route path={'templates'} element={<Templates/>}/> */}
+        {/*All*/}
+        <Route path={'*'} element={<Error/>}/>
+    </Route>
+  </Routes>
+</Box>
+
   );
 }
 
