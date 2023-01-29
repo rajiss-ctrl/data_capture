@@ -14,17 +14,25 @@ const SignUp = () => {
         </Box>
             <Box>
         <FormControl marginBottom={'32px'} isRequired>
-            <FormLabel>Email</FormLabel>
-            <Input placeholder='gemenebe@gmail.com' />
+            <FormLabel>Name (MDA,Organisation & Individual)</FormLabel>
+            <Input  border={'1px solid'} _hover={'none'} outline={'none'} height={'55px'} placeholder='Business name' />
         </FormControl>
         <FormControl marginBottom={'32px'} isRequired>
-            <FormLabel>Password</FormLabel>
-            <Input placeholder='**********' />
+            <FormLabel>Address</FormLabel>
+            <Input border={'1px solid'} _hover={'none'} outline={'none'} height={'55px'} placeholder='Business address' />
         </FormControl>
-            <Button marginBottom={'32px'} width={'100%'} padding={'10px 0'} color={'#FFFFFF'} background={'#D05510'} border={'none'} _hover={'none'}>Create  Account</Button>
+        <FormControl marginBottom={'32px'} isRequired>
+            <FormLabel>Email</FormLabel>
+            <Input border={'1px solid'} _hover={'none'} outline={'none'}  height={'55px'} placeholder='gemenebe@gmail.com' />
+        </FormControl>
+        <FormControl marginBottom={'32px'} isRequired>
+            <FormLabel>Create Password</FormLabel>
+            <Input border={'1px solid'} _hover={'none'} outline={'none'}  height={'55px'} placeholder='**********' />
+        </FormControl>
+            <Button height={'55px'}  marginBottom={'32px'} width={'100%'} padding={'10px 0'} color={'#FFFFFF'} background={'#D05510'} border={'none'} _hover={'none'}>Create  Account</Button>
             </Box>
             <Box>
-                <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}><Image width={'72px'} height={'3px'} src={Line}/>Or Login Up with<Image width={'72px'} height={'3px'} src={Line}/></Box>
+                <Box display={'flex'} justifyContent={'space-between'} alignItems={'center'}><Image width={'72px'} height={'3px'} src={Line}/>Or Sign Up with<Image width={'72px'} height={'3px'} src={Line}/></Box>
                 <Box margin={'30px 0'} display={'flex'} justifyContent={'center'} gap={'20px'} alignItems={'center'}><Image src={Google}/><Image src={Facebook}/></Box>
             </Box>
 

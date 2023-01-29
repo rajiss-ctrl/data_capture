@@ -13,7 +13,7 @@ const HeroSection = () => {
             <Heading fontSize={'40px'} fontFamily={'Gadugi'} margin={'52px 0 68px 0'} paddingRight={'20%'} >Making Data Easier To Access, Save And Download</Heading>
             <Box color={'#D05510'} textDecor={'underline'}>Click Here To Get Started</Box>
         </Box>
-        <Box marginTop={'-40px'} display={'flex'} justifyContent={'center'}>
+        <Box width={'90%'} marginTop={'-70px'} display={'flex'} justifyContent={'center'}>
             <Image  width={'100%'} marginRight={'13px'} src={HeroImg} alt="data capturing" />
         </Box>
     </Box>
